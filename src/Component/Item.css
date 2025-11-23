@@ -1,0 +1,16 @@
+.news-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid rgb(249, 249, 249);
+}
+
+.news-card:hover {
+  transform: scale(1.03); 
+  box-shadow: 10px 10px 20px white; 
+  cursor: pointer;
+}
+.hover-black-white:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s;
+}
+
