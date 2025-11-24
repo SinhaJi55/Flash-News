@@ -10,7 +10,9 @@ const News = ({ selectedCountry, category }) => {
 
   const perPage = 6;
 
-  const API = `https://api.thenewsapi.com/v1/news/top?api_token=6eHrs0cJCzqGQ8IRoX8rRFtqOli5TVcXM41SyxNQ&locale=${selectedCountry.code}&limit=${perPage}&language=en&categories=${category}`;
+ 
+  const API = `https://api.thenewsapi.com/v1/news/top?api_token=6eHrs0cJCzqGQ8IRoX8rRFtqOli5TVcXM41SyxNQ&locale=${selectedCountry.code}&limit=${perPage}&page=${page}&language=en&categories=${category}`;
+
 
   const getNews = async () => {
     setLoading(true);
